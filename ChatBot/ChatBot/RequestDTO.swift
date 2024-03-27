@@ -5,13 +5,12 @@
 //  Created by dopamint on 3/26/24.
 //
 
-struct RequestDTO: Codable {
-    let model: String
-    let stream: Bool
-    let messages: [MessagesDTO]
+struct RequestDTO: Encodable {
+    let model: GPTModel
+    let stream: Bool = false
+    let messages: [MessageDTO]
 }
 
-struct MessagesDTO : Codable {
-    let role: String
-    let content: String
+enum GPTModel: String, Codable {
+    case basic = "gpt-3.5-turbo-1106"
 }
