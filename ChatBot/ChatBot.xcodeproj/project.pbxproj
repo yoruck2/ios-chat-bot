@@ -58,6 +58,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		95B4F3282BB43A8E00AB4952 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B4B3E2BC2B42D1BB00818B3C /* AppDelegate.swift */,
+				B4B3E2BE2B42D1BB00818B3C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		95B4F3292BB43A9C00AB4952 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84149A5C2BB2940B003595D0 /* RequestDTO.swift */,
+				84149A5A2BB285B1003595D0 /* ResponseDTO.swift */,
+				95B4F3262BB42ED300AB4952 /* MessageDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95B4F32A2BB43BDB00AB4952 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4B3E2C52B42D1BC00818B3C /* Assets.xcassets */,
+				B4B3E2C72B42D1BC00818B3C /* LaunchScreen.storyboard */,
+				B4B3E2C22B42D1BB00818B3C /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95B4F32B2BB4714200AB4952 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4B3E2C02B42D1BB00818B3C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A74CE7C64FA149CB552BBE3F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,15 +126,10 @@
 		B4B3E2BB2B42D1BB00818B3C /* ChatBot */ = {
 			isa = PBXGroup;
 			children = (
-				B4B3E2BC2B42D1BB00818B3C /* AppDelegate.swift */,
-				B4B3E2BE2B42D1BB00818B3C /* SceneDelegate.swift */,
-				B4B3E2C02B42D1BB00818B3C /* ViewController.swift */,
-				84149A5C2BB2940B003595D0 /* RequestDTO.swift */,
-				84149A5A2BB285B1003595D0 /* ResponseDTO.swift */,
-				95B4F3262BB42ED300AB4952 /* MessageDTO.swift */,
-				B4B3E2C22B42D1BB00818B3C /* Main.storyboard */,
-				B4B3E2C52B42D1BC00818B3C /* Assets.xcassets */,
-				B4B3E2C72B42D1BC00818B3C /* LaunchScreen.storyboard */,
+				95B4F3282BB43A8E00AB4952 /* App */,
+				95B4F3292BB43A9C00AB4952 /* Model */,
+				95B4F32B2BB4714200AB4952 /* Controller */,
+				95B4F32A2BB43BDB00AB4952 /* Resources */,
 				B4B3E2CA2B42D1BC00818B3C /* Info.plist */,
 			);
 			path = ChatBot;

@@ -7,7 +7,7 @@
 
 struct RequestDTO: Encodable {
     let model: GPTModel
-    let stream: Bool = false
+    let stream: Bool
     let messages: [MessageDTO]
 }
 
