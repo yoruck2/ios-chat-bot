@@ -9,7 +9,7 @@ struct ResponseDTO: Decodable {
     let id: String
     let object: String
     let created: Int
-    let model: String
+    let model: GPTModel
     let systemFingerprint: String
     let choices: [Choice]
     let usage: Usage
