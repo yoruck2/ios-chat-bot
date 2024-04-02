@@ -11,8 +11,8 @@ struct ResponseDTO: Decodable {
     let created: Int
     let model: GPTModel
     let systemFingerprint: String
-    let choices: [Choice]
-    let usage: Usage
+    let choices: [ChoiceDTO]
+    let usage: UsageDTO
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -26,7 +26,7 @@ struct ResponseDTO: Decodable {
 
 }
 
-struct Usage: Decodable {
+struct UsageDTO: Decodable {
     let promptTokens: Int
     let completionTokens: Int
     let totalTokens: Int
@@ -38,7 +38,7 @@ struct Usage: Decodable {
     }
 }
 
-struct Choice: Decodable {
+struct ChoiceDTO: Decodable {
     let index: Int
     let message: MessageDTO
     let logprobs: String?
