@@ -23,6 +23,7 @@
 		548DCC0B40D1F4BC4766D293 /* Pods-ChatBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBot.release.xcconfig"; path = "Target Support Files/Pods-ChatBot/Pods-ChatBot.release.xcconfig"; sourceTree = "<group>"; };
 		84149A5A2BB285B1003595D0 /* ResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDTO.swift; sourceTree = "<group>"; };
 		84149A5C2BB2940B003595D0 /* RequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDTO.swift; sourceTree = "<group>"; };
+		843E18412BBD214C003EEF6D /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		86F2885AC45A38F47FDA4AD5 /* Pods_ChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		95B4F3262BB42ED300AB4952 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
@@ -78,8 +79,9 @@
 		95B4F32A2BB43BDB00AB4952 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B4B3E2CA2B42D1BC00818B3C /* Info.plist */,
+				843E18412BBD214C003EEF6D /* Configuration.xcconfig */,
 				B4B3E2C52B42D1BC00818B3C /* Assets.xcassets */,
+				B4B3E2CA2B42D1BC00818B3C /* Info.plist */,
 				B4B3E2C72B42D1BC00818B3C /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -139,8 +141,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4B3E2CD2B42D1BC00818B3C /* Build configuration list for PBXNativeTarget "ChatBot" */;
 			buildPhases = (
-				95B4F3192BB2C1A100AB4952 /* SwiftLint */,
 				CF48DBE895D16B153F73C922 /* [CP] Check Pods Manifest.lock */,
+				95B4F3192BB2C1A100AB4952 /* SwiftLint */,
 				B4B3E2B52B42D1BB00818B3C /* Sources */,
 				B4B3E2B62B42D1BB00818B3C /* Frameworks */,
 				B4B3E2B72B42D1BB00818B3C /* Resources */,
@@ -274,6 +276,7 @@
 /* Begin XCBuildConfiguration section */
 		B4B3E2CB2B42D1BC00818B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843E18412BBD214C003EEF6D /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -324,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -337,6 +340,7 @@
 		};
 		B4B3E2CC2B42D1BC00818B3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843E18412BBD214C003EEF6D /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -381,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
