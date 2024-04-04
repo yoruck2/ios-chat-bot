@@ -10,6 +10,11 @@
 		3756D96839324F046B039CE8 /* Pods_ChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F2885AC45A38F47FDA4AD5 /* Pods_ChatBot.framework */; };
 		84149A5B2BB285B1003595D0 /* ResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84149A5A2BB285B1003595D0 /* ResponseDTO.swift */; };
 		84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84149A5C2BB2940B003595D0 /* RequestDTO.swift */; };
+		95280FAF2BBD68C90071860A /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FAE2BBD68C90071860A /* NetworkRouter.swift */; };
+		95280FB32BBD6C440071860A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB22BBD6C440071860A /* APIRouter.swift */; };
+		95280FB52BBD6CA10071860A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB42BBD6CA10071860A /* NetworkResult.swift */; };
+		95280FB72BBD6CF80071860A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB62BBD6CF80071860A /* APIConstants.swift */; };
+		95280FC12BBE0C880071860A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FC02BBE0C880071860A /* AppConfig.swift */; };
 		95B4F31B2BB2C21E00AB4952 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */; };
 		95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4F3262BB42ED300AB4952 /* MessageDTO.swift */; };
 		B4B3E2BD2B42D1BB00818B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3E2BC2B42D1BB00818B3C /* AppDelegate.swift */; };
@@ -25,6 +30,11 @@
 		84149A5C2BB2940B003595D0 /* RequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDTO.swift; sourceTree = "<group>"; };
 		843E18412BBD214C003EEF6D /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		86F2885AC45A38F47FDA4AD5 /* Pods_ChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95280FAE2BBD68C90071860A /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		95280FB22BBD6C440071860A /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		95280FB42BBD6CA10071860A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		95280FB62BBD6CF80071860A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		95280FC02BBE0C880071860A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		95B4F3262BB42ED300AB4952 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
 		B4B3E2B92B42D1BB00818B3C /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +65,39 @@
 				86F2885AC45A38F47FDA4AD5 /* Pods_ChatBot.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95280FAA2BBD63A00071860A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				95280FAE2BBD68C90071860A /* NetworkRouter.swift */,
+				95280FB22BBD6C440071860A /* APIRouter.swift */,
+				95280FB42BBD6CA10071860A /* NetworkResult.swift */,
+				95280FB62BBD6CF80071860A /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		95280FB82BBD70870071860A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				95280FC02BBE0C880071860A /* AppConfig.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		95280FB92BBD708E0071860A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95280FC32BBE36590071860A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		95B4F3282BB43A8E00AB4952 /* App */ = {
@@ -128,8 +171,10 @@
 			children = (
 				95B4F3282BB43A8E00AB4952 /* App */,
 				95B4F3292BB43A9C00AB4952 /* Model */,
+				95280FAA2BBD63A00071860A /* Network */,
 				95B4F32B2BB4714200AB4952 /* Controller */,
 				95B4F32A2BB43BDB00AB4952 /* Resources */,
+				95280FB82BBD70870071860A /* Util */,
 			);
 			path = ChatBot;
 			sourceTree = "<group>";
@@ -146,6 +191,7 @@
 				B4B3E2B52B42D1BB00818B3C /* Sources */,
 				B4B3E2B62B42D1BB00818B3C /* Frameworks */,
 				B4B3E2B72B42D1BB00818B3C /* Resources */,
+				157BC9F75AEC0E5F7B580B83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +249,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		157BC9F75AEC0E5F7B580B83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatBot/Pods-ChatBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatBot/Pods-ChatBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatBot/Pods-ChatBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		95B4F3192BB2C1A100AB4952 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -252,8 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B3E2C12B42D1BB00818B3C /* ViewController.swift in Sources */,
+				95280FB72BBD6CF80071860A /* APIConstants.swift in Sources */,
+				95280FB52BBD6CA10071860A /* NetworkResult.swift in Sources */,
+				95280FB32BBD6C440071860A /* APIRouter.swift in Sources */,
 				B4B3E2BD2B42D1BB00818B3C /* AppDelegate.swift in Sources */,
+				95280FC12BBE0C880071860A /* AppConfig.swift in Sources */,
 				84149A5B2BB285B1003595D0 /* ResponseDTO.swift in Sources */,
+				95280FAF2BBD68C90071860A /* NetworkRouter.swift in Sources */,
 				84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */,
 				95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */,
 				B4B3E2BF2B42D1BB00818B3C /* SceneDelegate.swift in Sources */,
