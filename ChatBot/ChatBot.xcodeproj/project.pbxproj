@@ -14,6 +14,8 @@
 		95280FB32BBD6C440071860A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB22BBD6C440071860A /* APIRouter.swift */; };
 		95280FB52BBD6CA10071860A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB42BBD6CA10071860A /* NetworkResult.swift */; };
 		95280FB72BBD6CF80071860A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB62BBD6CF80071860A /* APIConstants.swift */; };
+		95280FBB2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBA2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift */; };
+		95280FBD2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */; };
 		95280FC12BBE0C880071860A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FC02BBE0C880071860A /* AppConfig.swift */; };
 		95B4F31B2BB2C21E00AB4952 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */; };
 		95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4F3262BB42ED300AB4952 /* MessageDTO.swift */; };
@@ -34,6 +36,8 @@
 		95280FB22BBD6C440071860A /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		95280FB42BBD6CA10071860A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		95280FB62BBD6CF80071860A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		95280FBA2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestDTO+DictionaryRepresentation.swift"; sourceTree = "<group>"; };
+		95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageDTO+DictionaryRepresentation.swift"; sourceTree = "<group>"; };
 		95280FC02BBE0C880071860A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		95B4F3262BB42ED300AB4952 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		95280FB82BBD70870071860A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				95280FB92BBD708E0071860A /* Extensions */,
 				95280FC02BBE0C880071860A /* AppConfig.swift */,
 			);
 			path = Util;
@@ -89,6 +94,8 @@
 		95280FB92BBD708E0071860A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				95280FBA2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift */,
+				95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95280FBB2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift in Sources */,
 				B4B3E2C12B42D1BB00818B3C /* ViewController.swift in Sources */,
 				95280FB72BBD6CF80071860A /* APIConstants.swift in Sources */,
 				95280FB52BBD6CA10071860A /* NetworkResult.swift in Sources */,
@@ -325,6 +333,7 @@
 				84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */,
 				95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */,
 				B4B3E2BF2B42D1BB00818B3C /* SceneDelegate.swift in Sources */,
+				95280FBD2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
