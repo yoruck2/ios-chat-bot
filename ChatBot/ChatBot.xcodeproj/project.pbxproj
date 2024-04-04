@@ -17,6 +17,7 @@
 		95280FB72BBD6CF80071860A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB62BBD6CF80071860A /* APIConstants.swift */; };
 		95280FBB2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBA2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift */; };
 		95280FBD2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */; };
+		95280FBF2BBD71390071860A /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBE2BBD71390071860A /* ChatService.swift */; };
 		95280FC12BBE0C880071860A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FC02BBE0C880071860A /* AppConfig.swift */; };
 		95B4F31B2BB2C21E00AB4952 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */; };
 		95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4F3262BB42ED300AB4952 /* MessageDTO.swift */; };
@@ -40,6 +41,7 @@
 		95280FB62BBD6CF80071860A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		95280FBA2BBD70AE0071860A /* RequestDTO+DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestDTO+DictionaryRepresentation.swift"; sourceTree = "<group>"; };
 		95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageDTO+DictionaryRepresentation.swift"; sourceTree = "<group>"; };
+		95280FBE2BBD71390071860A /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		95280FC02BBE0C880071860A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		95B4F3262BB42ED300AB4952 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		95280FC32BBE36590071860A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				95280FBE2BBD71390071860A /* ChatService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				95B4F3282BB43A8E00AB4952 /* App */,
 				95B4F3292BB43A9C00AB4952 /* Model */,
 				95280FAA2BBD63A00071860A /* Network */,
+				95280FC32BBE36590071860A /* Service */,
 				95B4F32B2BB4714200AB4952 /* Controller */,
 				95B4F32A2BB43BDB00AB4952 /* Resources */,
 				95280FB82BBD70870071860A /* Util */,
@@ -334,6 +338,7 @@
 				84149A5B2BB285B1003595D0 /* ResponseDTO.swift in Sources */,
 				95280FB12BBD6C010071860A /* APIClient.swift in Sources */,
 				95280FAF2BBD68C90071860A /* NetworkRouter.swift in Sources */,
+				95280FBF2BBD71390071860A /* ChatService.swift in Sources */,
 				84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */,
 				95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */,
 				B4B3E2BF2B42D1BB00818B3C /* SceneDelegate.swift in Sources */,
