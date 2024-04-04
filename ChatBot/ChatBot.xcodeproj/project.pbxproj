@@ -11,6 +11,7 @@
 		84149A5B2BB285B1003595D0 /* ResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84149A5A2BB285B1003595D0 /* ResponseDTO.swift */; };
 		84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84149A5C2BB2940B003595D0 /* RequestDTO.swift */; };
 		95280FAF2BBD68C90071860A /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FAE2BBD68C90071860A /* NetworkRouter.swift */; };
+		95280FB12BBD6C010071860A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB02BBD6C010071860A /* APIClient.swift */; };
 		95280FB32BBD6C440071860A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB22BBD6C440071860A /* APIRouter.swift */; };
 		95280FB52BBD6CA10071860A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB42BBD6CA10071860A /* NetworkResult.swift */; };
 		95280FB72BBD6CF80071860A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FB62BBD6CF80071860A /* APIConstants.swift */; };
@@ -33,6 +34,7 @@
 		843E18412BBD214C003EEF6D /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		86F2885AC45A38F47FDA4AD5 /* Pods_ChatBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95280FAE2BBD68C90071860A /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		95280FB02BBD6C010071860A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		95280FB22BBD6C440071860A /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		95280FB42BBD6CA10071860A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		95280FB62BBD6CF80071860A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				95280FAE2BBD68C90071860A /* NetworkRouter.swift */,
+				95280FB02BBD6C010071860A /* APIClient.swift */,
 				95280FB22BBD6C440071860A /* APIRouter.swift */,
 				95280FB42BBD6CA10071860A /* NetworkResult.swift */,
 				95280FB62BBD6CF80071860A /* APIConstants.swift */,
@@ -329,6 +332,7 @@
 				B4B3E2BD2B42D1BB00818B3C /* AppDelegate.swift in Sources */,
 				95280FC12BBE0C880071860A /* AppConfig.swift in Sources */,
 				84149A5B2BB285B1003595D0 /* ResponseDTO.swift in Sources */,
+				95280FB12BBD6C010071860A /* APIClient.swift in Sources */,
 				95280FAF2BBD68C90071860A /* NetworkRouter.swift in Sources */,
 				84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */,
 				95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */,
