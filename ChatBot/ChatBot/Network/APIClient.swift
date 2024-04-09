@@ -19,18 +19,21 @@ final class APIClient {
                 switch response.result {
                 case .success(let decodedData):
                     completion(.success(decodedData))
-                case .failure(_):
+                case .failure(let error):
+                    var errorMessage: String?
+                    if let data = response.data, let message = String(data: data, encoding: .utf8) {
+                        errorMessage = message
+                    }
+                    
                     if let statusCode = response.response?.statusCode {
                         switch statusCode {
                         case 400...499:
-                            completion(.failure(.pathError))
+                            completion(.failure(.pathError(message: errorMessage)))
                         case 500...599:
-                            completion(.failure(.serverError))
+                            completion(.failure(.serverError(message: errorMessage ?? "server error")))
                         default:
                             completion(.failure(.networkFail))
                         }
-                    } else {
-                        completion(.failure(.networkFail))                
                     }
                 }
             }
