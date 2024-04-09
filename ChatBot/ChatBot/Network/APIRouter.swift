@@ -7,7 +7,7 @@
 
 import Alamofire
 
-enum APIRouter: NetworkRouter {
+enum APIRouter: NetworkRouter, URLRequestConvertible {
     case chatCompletion(requestDTO: RequestDTO)
     
     var baseURL: String {
@@ -47,18 +47,5 @@ enum APIRouter: NetworkRouter {
         case .chatCompletion:
             return JSONEncoding.default
         }
-    }
-}
-
-extension APIRouter: URLRequestConvertible {
-    func asURLRequest() throws -> URLRequest {
-        let url = try baseURL.asURL()
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-        urlRequest.httpMethod = method.rawValue
-        urlRequest.allHTTPHeaderFields = headers
-        if let parameters = parameters {
-            urlRequest = try encoding.encode(urlRequest, with: parameters)
-        }
-        return urlRequest
     }
 }

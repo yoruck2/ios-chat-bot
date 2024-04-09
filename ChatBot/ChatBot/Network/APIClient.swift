@@ -30,8 +30,7 @@ final class APIClient {
                             completion(.failure(.networkFail))
                         }
                     } else {
-                        completion(.failure(.networkFail))
-                        
+                        completion(.failure(.networkFail))                
                     }
                 }
             }
