@@ -5,7 +5,7 @@
 //  Created by nayeon  on 3/27/24.
 //
 
-struct MessageDTO: Codable {
+struct MessageDTO: Codable, DictionaryRepresentable {
     let role: Role
     let content: String
 }

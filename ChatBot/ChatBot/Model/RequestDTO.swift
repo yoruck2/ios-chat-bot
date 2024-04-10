@@ -5,7 +5,11 @@
 //  Created by dopamint on 3/26/24.
 //
 
-struct RequestDTO: Encodable {
+protocol DictionaryRepresentable {
+    func dictionaryRepresentation() -> [String: Any]
+}
+
+struct RequestDTO: Encodable, DictionaryRepresentable {
     let model: GPTModel
     let stream: Bool
     let messages: [MessageDTO]
