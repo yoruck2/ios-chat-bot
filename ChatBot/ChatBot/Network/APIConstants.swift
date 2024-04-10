@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APIConstants {
+enum APIConstants {
     static let baseURL = "https://api.openai.com"
 }
 

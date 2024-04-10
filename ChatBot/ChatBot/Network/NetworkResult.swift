@@ -11,9 +11,7 @@ enum NetworkResult<T> {
 }
 
 enum NetworkError: Error {
-    case requestError(message: String?)
     case pathError(message: String?)
-    case parsingError(message: String?)
     case serverError(message: String?)
     case networkFail
 }
