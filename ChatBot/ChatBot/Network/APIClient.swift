@@ -7,12 +7,11 @@
 
 import Alamofire
 
-final class APIClient {
-    static let shared = APIClient()
+enum APIClient {
     
-    func request<T: Decodable>(_ object: T.Type,
-                               router: URLRequestConvertible,
-                               completion: @escaping (NetworkResult<T>) -> Void) {
+    static func request<T: Decodable>(_ object: T.Type,
+                                      router: URLRequestConvertible,
+                                      completion: @escaping (NetworkResult<T>) -> Void) {
         AF.request(router)
             .validate(statusCode: 200..<500)
             .responseDecodable(of: object) { response in

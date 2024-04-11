@@ -10,17 +10,12 @@ protocol ChatServiceProtocol {
 }
 
 final class ChatService: ChatServiceProtocol {
-    let apiClient: APIClient
-    
-    init(apiClient: APIClient = .shared) {
-        self.apiClient = apiClient
-    }
     
     func sendChatRequest(message: String, completion: @escaping (NetworkResult<ResponseDTO>) -> Void) {
         let requestDTO = RequestDTO(model: .basic, stream: false, messages: [MessageDTO(role: .user, content: message)])
         let router = APIRouter.chatCompletion(requestDTO: requestDTO)
         
-        apiClient.request(ResponseDTO.self, router: router) { result in
+        APIClient.request(ResponseDTO.self, router: router) { result in
             switch result {
             case .success(let response):
                 completion(.success(response))
