@@ -8,4 +8,6 @@ target 'ChatBot' do
   # Pods for ChatBot
   pod "SwiftLint"
   pod 'Alamofire'
+  pod 'SnapKit'
+  pod 'Then'
 end
