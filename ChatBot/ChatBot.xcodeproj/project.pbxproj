@@ -19,6 +19,7 @@
 		95280FBD2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */; };
 		95280FBF2BBD71390071860A /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FBE2BBD71390071860A /* ChatService.swift */; };
 		95280FC12BBE0C880071860A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FC02BBE0C880071860A /* AppConfig.swift */; };
+		95A0785A2BCD38E500E841B9 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A078592BCD38E500E841B9 /* MessageCell.swift */; };
 		95A0785C2BCD38FA00E841B9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0785B2BCD38FA00E841B9 /* ChatViewController.swift */; };
 		95A078622BCE69A900E841B9 /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A078612BCE69A900E841B9 /* ChatBubbleView.swift */; };
 		95B4F31B2BB2C21E00AB4952 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */; };
@@ -44,6 +45,7 @@
 		95280FBC2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageDTO+DictionaryRepresentation.swift"; sourceTree = "<group>"; };
 		95280FBE2BBD71390071860A /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		95280FC02BBE0C880071860A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		95A078592BCD38E500E841B9 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		95A0785B2BCD38FA00E841B9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		95A078612BCE69A900E841B9 /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
 		95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
