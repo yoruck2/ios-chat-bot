@@ -21,6 +21,7 @@
 		95280FC12BBE0C880071860A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95280FC02BBE0C880071860A /* AppConfig.swift */; };
 		95A0785A2BCD38E500E841B9 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A078592BCD38E500E841B9 /* MessageCell.swift */; };
 		95A0785C2BCD38FA00E841B9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0785B2BCD38FA00E841B9 /* ChatViewController.swift */; };
+		95A0785E2BCD392700E841B9 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0785D2BCD392700E841B9 /* ChatViewModel.swift */; };
 		95A078622BCE69A900E841B9 /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A078612BCE69A900E841B9 /* ChatBubbleView.swift */; };
 		95B4F31B2BB2C21E00AB4952 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */; };
 		95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4F3262BB42ED300AB4952 /* MessageDTO.swift */; };
@@ -47,6 +48,7 @@
 		95280FC02BBE0C880071860A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		95A078592BCD38E500E841B9 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		95A0785B2BCD38FA00E841B9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		95A0785D2BCD392700E841B9 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		95A078612BCE69A900E841B9 /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
 		95B4F31A2BB2C21E00AB4952 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		95B4F3262BB42ED300AB4952 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				95A078592BCD38E500E841B9 /* MessageCell.swift */,
 				95A0785B2BCD38FA00E841B9 /* ChatViewController.swift */,
+				95A0785D2BCD392700E841B9 /* ChatViewModel.swift */,
 				95A078612BCE69A900E841B9 /* ChatBubbleView.swift */,
 			);
 			path = Presentation;
@@ -350,6 +353,7 @@
 				84149A5D2BB2940B003595D0 /* RequestDTO.swift in Sources */,
 				95B4F3272BB42ED300AB4952 /* MessageDTO.swift in Sources */,
 				B4B3E2BF2B42D1BB00818B3C /* SceneDelegate.swift in Sources */,
+				95A0785E2BCD392700E841B9 /* ChatViewModel.swift in Sources */,
 				95280FBD2BBD70E50071860A /* MessageDTO+DictionaryRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
